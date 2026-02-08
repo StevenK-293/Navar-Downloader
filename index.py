@@ -107,7 +107,7 @@ class download_comic:
             self.log_message("ebooklib not installed — EPUB disabled (pip install ebooklib)", "warn")
 
         self.log_message("CBZ (Comic Book ZIP) export enabled", "info")
-        self.log_message("Application is ready.", "info")
+        self.log_message("Comic Downloader is ready.", "info")
 
     def setup_ui(self):
         main = ttk.Frame(self.root, padding="18")
