@@ -896,8 +896,8 @@ class UniversalComicDownloader:
         if len(urls) < 3:
             return urls
         
-        # Try to find a common base URL and number pattern -> comix.to
-        # Pattern: https://comix.to/path/01.ext, 02.ext, 03.ext, etc.
+        # Try to find a common base URL and number pattern
+        # Pattern: /path/01.ext, 02.ext, 03.ext, etc.
         pattern_match = re.search(r'^(.*?)(\d{2,3})(\.[\w]+)(?:\?.*)?$', urls[0])
         if not pattern_match:
             return urls 
