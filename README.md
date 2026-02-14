@@ -83,4 +83,4 @@ playwright install
 * [https://flamecomics.xyz/](https://flamecomics.xyz/)
 * [https://luacomic.org/](https://luacomic.org/)
 
-> **Note:** Many other sites should work too, but these are the ones we've actually tested. If it doesn't work on your favorite site, let us know!
+> **Note:** Many other sites should work too, but these are the ones i actually tested. If it doesn't work on your favorite site, let me know so i can add it.
