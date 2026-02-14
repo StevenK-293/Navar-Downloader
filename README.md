@@ -1,46 +1,57 @@
 # Comic Downloader
 
-Was a simple tool to extract & download image from raw sites like navar or kako, but i just made it so you can extract image & download image from many sites now idk why just did it.
+A universal comic downloader image that grabs manga, manhwa, and manhua image from pretty much any website, this started as a simple tool for raw sites like Naver and Kakao, but now it evolved into something that just works everywhere. Why? Because manually downloading images one by one took way long for me.
 
-## Features
+##  Features
 
-* **Image extraction** - finds and downloads comic images from a chapter page
-* **Playwright browser support (recommended)** - handles JavaScript, lazy loading, and site protections
-* **Requests fallback** - used automatically if Playwright is not installed
-* **Automatic folder naming** - uses comic title and chapter name from page metadata
-* **Filtering options**:
-
-  * Exclude GIFs
-  * Skip tiny images (<15 KB, usually ads or logos)
-  * Aggressive filtering for comment-section and social images
-* **Export formats**:
-
+* **Smart image extraction** - automatically finds and downloads all comic images from any chapter page
+* **browser mode** - uses Playwright to handle JavaScript-heavy sites, lazy loading, and anti-scraping protection
+* **Direct HTTP fallback** - switches to simple requests if browser mode isn't available
+* **Live download info** - shows image URLs and file sizes as they download
+* **Auto-naming** - creates folders based on comic title and chapter metadata
+* **Smart filtering**:
+  * Excludes GIFs (unless you really want them)
+  * Skips tiny images under 15 KB (goodbye ads and logos)
+  * Filters out comment avatars and social media junk
+* **Multiple export formats**:
   * Individual images (JPG / PNG / WEBP)
-  * **CBZ** (standard comic book archive – ZIP)
-  * PDF (requires Pillow)
-  * EPUB (requires Pillow + ebooklib)
-* **Test URL mode** – preview how many images will be found without downloading
+  * **CBZ** - standard comic book archive, works with all readers
+  * PDF - requires Pillow
+  * EPUB - requires Pillow + ebooklib
+* **Test URL** - preview how many images will be found before actually downloading
 
-## Usage
+## Quick Start
 
-### 0. Install dependencies
+### Installation
 
 ```bash
+# Install Python dependencies
 pip install -r requirements.txt
+
+# Install Playwright browsers (needed for browser mode)
+playwright install
 ```
 
-### 1. Download a chapter
+### How to Use
 
-1. Paste the **chapter URL**
+1. Run the app:
+   ```bash
+   python index.py
+   ```
 
-   * Example:
-     `https://comic.naver.com/webtoon/detail?titleId=758150&no=270&week=sun`
-   * Example 2:
-     `https://page.kakao.com/content/54727849/viewer/54730829`
-2. Choose a save location (defaults to `~/Downloads/Comics`)
-3. Keep **Use Playwright browser** enabled unless you have a specific reason not to
-4. Select your export formats
-5. Click **Start Download**, or use **Test URL** first to preview results
+2. Paste your **chapter URL**
+   - Examples:
+     - `https://comic.naver.com/webtoon/detail?titleId=758150&no=270&week=sun`
+     - `https://page.kakao.com/content/54727849/viewer/54730829`
+     - `https://comix.to/comic/12345/chapter-1`
+
+3. Choose where to save (defaults to `~/Downloads/Comics`)
+
+4. Keep **Use Playwright browser** enabled (recommended for most sites)
+
+5. Select your export formats (CBZ is the most compatible)
+
+6. Hit **Start Download** or **Test URL** to preview first
 
 ## Recommended Settings (Most Sites)
 
@@ -63,10 +74,13 @@ pip install -r requirements.txt
 
 ### Not raw sites
 
-* [https://comix.to/](https://comix.to/) (does not download all images yet)
+* [https://comix.to/](https://comix.to/)  (should work now)
 * [https://cocomic.co/](https://cocomic.co/)
-* [https://mangaball.net/](https://mangaball.net/) (some chapters fail or don’t display)
+* [https://mangaball.net/](https://mangaball.net/) (should work now)
 * [https://atsu.moe/](https://atsu.moe/)
 * [https://asuracomic.net/](https://asuracomic.net/)
+* [https://manhwazone.to/](https://manhwazone.to/)
+* [https://flamecomics.xyz/](https://flamecomics.xyz/)
+* [https://luacomic.org/](https://luacomic.org/)
 
-> Other sites may work, but they have not been fully tested yet.
+> **Note:** Many other sites should work too, but these are the ones we've actually tested. If it doesn't work on your favorite site, let us know!
