@@ -43,7 +43,7 @@ playwright install
    - Examples:
      - `https://comic.naver.com/webtoon/detail?titleId=758150&no=270&week=sun`
      - `https://page.kakao.com/content/54727849/viewer/54730829`
-     - `https://comix.to/comic/12345/chapter-1`
+     - `https://comix.to/title/nk9re-raising-villains-the-right-way/8205015-chapter-22`
 
 3. Choose where to save (defaults to `~/Downloads/Comics`)
 
