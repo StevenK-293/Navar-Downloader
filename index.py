@@ -815,7 +815,7 @@ class UniversalComicDownloader:
             "img.lazy-load",
             "img.lazy-loaded",
             
-            # KuraManga / ShadowAbyss
+            # KuraManga
             ".container img[alt*='Chapter']",
             
             # LuaComic
