@@ -76,7 +76,7 @@ playwright install
 
 ### Not raw sites
 
-- [https://comix.to/](https://comix.to/) (works via browser mode)
+- [https://comix.to/](https://comix.to/) (should work not but kinda buggy and sometimes works)
 - [https://cocomic.co/](https://cocomic.co/)
 - [https://mangaball.net/](https://mangaball.net/) (broken/WIP currently unsupported)
 - [https://atsu.moe/](https://atsu.moe/)
