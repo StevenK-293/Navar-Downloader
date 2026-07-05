@@ -83,12 +83,15 @@ playwright install
 
 - [https://comix.to/](https://comix.to/) (should work now, but it is kinda buggy and sometimes works)
 - [https://cocomic.co/](https://cocomic.co/)
-- [https://mangaball.net/](https://mangaball.net/) (broken/WIP currently unsupported)
 - [https://atsu.moe/](https://atsu.moe/)
 - [https://asuracomic.net/](https://asuracomic.net/)
 - [https://manhwazone.to/](https://manhwazone.to/)
 - [https://flamecomics.xyz/](https://flamecomics.xyz/)
 - [https://luacomic.org/](https://luacomic.org/)
 - [https://kuramanga.com/](https://kuramanga.com/)
+
+## Unsupported
+
+- [https://mangaball.net/](https://mangaball.net/) (broken/WIP currently unsupported)
 
 > **Note:** Many other sites should work too, but these are the ones i actually tested. If it doesn't work on your favorite site, let me know so i can add it.
