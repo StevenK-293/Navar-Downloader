@@ -2,6 +2,11 @@
 
 A universal comic downloader image that grabs manga, manhwa, and manhua image from pretty much any website, this started as a simple tool for raw sites like Naver and Kakao, but now it evolved into something that just works everywhere. Why? Because manually downloading images one by one took way long for me.
 
+## Image
+
+<img width="600" height="460" alt="image" src="https://github.com/user-attachments/assets/52efaa58-58cc-4ebd-a0b2-517021855348" />
+
+
 ## Features
 
 - **Smart image extraction** - automatically finds and downloads all comic images from any chapter page
